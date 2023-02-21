@@ -1,9 +1,10 @@
 export default {
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'blog.loc',
+    title: 'Блог',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'uk'
     },
     meta: [
       { charset: 'utf-8' },
