@@ -35,7 +35,7 @@ export default {
       {
         theme: "bootstrap4-light-blue",
         ripple: true,
-        components: ["Button"],
+        components: ["Button", "MegaMenu"],
         directives: [],
       },
     ],
