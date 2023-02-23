@@ -1,17 +1,21 @@
 <template>
-  <ul class="nestedset-menu">
-    <li
-      v-for="menuItem in items"
-      :key="menuItem.id"
-      :class="{ 'has-children': menuItem.children?.length > 0 }"
-    >
-      <a :href="menuItem.url">{{ menuItem.name }}</a>
-      <BMenuItem
-        :items="menuItem.children"
-        v-if="menuItem.children.length > 0"
-      />
-    </li>
-  </ul>
+  <div class="menu__list">
+    <div v-for="menuItem in items" :key="menuItem.id">
+      <a v-on:mousemove="subMenuShow" :href="menuItem.url">{{
+        menuItem.name
+      }}</a>
+      <div v-if="menuItem.children.length > 0">
+        <div
+          v-for="item in menuItem.children"
+          :key="item.id"
+          class="sub"
+          :class="{ block: showSub }"
+        >
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -23,67 +27,26 @@ export default {
       required: true,
     },
   },
-  components: {
-    BMenuItem: this,
+  data() {
+    return {
+      showSub: false,
+    };
+  },
+  methods: {
+    subMenuShow() {
+      this.showSub = true;
+    },
   },
 };
 </script>
 
 <style lang="scss">
-.nestedset-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  .has-children {
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 0;
-      margin-top: -4px;
-      width: 0;
-      height: 0;
-      border-top: 4px solid transparent;
-      border-right: 4px solid #666;
-      border-bottom: 4px solid transparent;
-    }
-
-    & > ul {
-      display: none;
-      padding: 0;
-      margin: 0 0 0 10px;
-
-      & > li {
-        margin: 0;
-        padding: 0;
-      }
-
-      & > .has-children > a {
-        padding-right: 20px;
-
-        &:after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 0;
-          margin-top: -4px;
-          width: 0;
-          height: 0;
-          border-top: 4px solid transparent;
-          border-right: 4px solid #666;
-          border-bottom: 4px solid transparent;
-        }
-      }
-    }
-
-    & > a:hover + ul {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-  }
+.menu__list {
+  position: relative;
+  display: inline-block;
+}
+.sub {
+  display: none;
+  margin-left: 10px;
 }
 </style>
