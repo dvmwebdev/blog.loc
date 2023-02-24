@@ -1,10 +1,12 @@
 <template>
   <div class="grid grid-nogutter">
-    <div class="sidebar__left col-fixed h-full">
-      <BMenu />
+    <div class="col-3">
+      <div class="sidebar__left">
+        <BMenu />
+      </div>
     </div>
-    <div class="col">content<Nuxt /></div>
-    <div class="sidebar__right col-fixed">sr</div>
+    <div class="col-6">content<Nuxt /></div>
+    <div class="col-3"><div class="sidebar__right">sr</div></div>
   </div>
 </template>
 
@@ -25,11 +27,9 @@ export default {
 <style scoped lang="scss">
 .sidebar {
   &__left {
-    width: 320px;
     padding: 5px;
   }
   &__right {
-    width: 320px;
   }
 }
 </style>
