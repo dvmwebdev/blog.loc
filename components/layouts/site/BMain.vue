@@ -5,7 +5,7 @@
         <BMenu />
       </div>
     </div>
-    <div class="col-7">content<Nuxt /></div>
+    <div class="col-7"><Nuxt /></div>
     <div class="col-3"><div class="sidebar__right">sr</div></div>
   </div>
 </template>
