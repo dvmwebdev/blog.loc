@@ -1,11 +1,11 @@
 <template>
   <div class="grid grid-nogutter">
-    <div class="col-3">
+    <div class="col-2">
       <div class="sidebar__left">
         <BMenu />
       </div>
     </div>
-    <div class="col-6">content<Nuxt /></div>
+    <div class="col-7">content<Nuxt /></div>
     <div class="col-3"><div class="sidebar__right">sr</div></div>
   </div>
 </template>

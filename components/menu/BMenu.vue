@@ -1,10 +1,10 @@
 <template>
   <div class="menu" :class="{ 'small-menu': smallMenu }">
     <BMenuItem
-      v-for="(item, index) in menuTree"
+      v-for="(item, index) in items"
       :key="index"
       :data="item.children"
-      :label="item.label"
+      :label="item.name"
       :icon="item.icon"
       :depth="0"
       :smallMenu="smallMenu"
@@ -20,47 +20,146 @@ export default {
   name: "recursive-menu",
   data: () => ({
     smallMenu: false,
-    menuTree: [
+    items: [
       {
-        label: "Home",
-        icon: "pi pi-home",
+        id: 1,
+        name: "voluptas",
+        children: [],
+      },
+      {
+        id: 2,
+        name: "beatae",
         children: [
           {
-            label: "level 1.1",
+            id: 11,
+            name: "repudiandae",
+            children: [],
+          },
+          {
+            id: 12,
+            name: "velit",
+            children: [],
+          },
+          {
+            id: 13,
+            name: "adipisci",
+            children: [],
+          },
+          {
+            id: 14,
+            name: "facilis",
             children: [
               {
-                label: "level 1.1.1",
-                children: [
-                  {
-                    label: "level 1.1.1.1",
-                  },
-                ],
+                id: 14,
+                name: "facilis",
+                children: [],
               },
             ],
           },
-          {
-            label: "level 1.2",
-          },
         ],
       },
       {
-        label: "Dashboard",
-        icon: "pi pi-th-large",
+        id: 3,
+        name: "laudantium",
+        children: [],
+      },
+      {
+        id: 4,
+        name: "adipisci",
         children: [
           {
-            label: "level 2.1",
+            id: 15,
+            name: "nihil",
+            children: [],
           },
           {
-            label: "level 2.2",
+            id: 16,
+            name: "ipsa",
+            children: [],
           },
           {
-            label: "level 2.3",
+            id: 17,
+            name: "veritatis",
+            children: [],
+          },
+          {
+            id: 18,
+            name: "et",
+            children: [],
           },
         ],
       },
       {
-        label: "Settings",
-        icon: "pi pi-cog",
+        id: 5,
+        name: "possimus",
+        children: [],
+      },
+      {
+        id: 6,
+        name: "perferendis",
+        children: [],
+      },
+      {
+        id: 7,
+        name: "dignissimos",
+        children: [
+          {
+            id: 19,
+            name: "aut",
+            children: [],
+          },
+          {
+            id: 20,
+            name: "cupiditate",
+            children: [],
+          },
+          {
+            id: 21,
+            name: "quia",
+            children: [],
+          },
+        ],
+      },
+      {
+        id: 8,
+        name: "fuga",
+        children: [
+          {
+            id: 22,
+            name: "consequatur",
+            children: [],
+          },
+          {
+            id: 23,
+            name: "et",
+            children: [],
+          },
+          {
+            id: 24,
+            name: "ullam",
+            children: [],
+          },
+          {
+            id: 25,
+            name: "hic",
+            children: [],
+          },
+          {
+            id: 26,
+            name: "illo",
+            children: [],
+          },
+        ],
+      },
+      {
+        id: 9,
+        name: "ut",
+        children: [],
+      },
+      {
+        id: 10,
+        name: "nisi",
+        children: [],
       },
     ],
   }),

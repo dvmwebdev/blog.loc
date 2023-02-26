@@ -9,7 +9,7 @@
         <i v-if="icon" :class="icon"></i>
         <span v-if="showLabel">{{ label }}</span>
       </div>
-      <div v-if="data" class="right">
+      <div v-if="data.length" class="right">
         <i class="pi pi-angle-down" :class="{ opened: expanded }"></i>
       </div>
     </div>
@@ -25,7 +25,7 @@
         v-for="(item, index) in data"
         :key="index"
         :data="item.children"
-        :label="item.label"
+        :label="item.name"
         :icon="item.icon"
         :depth="depth + 1"
         :smallMenu="smallMenu"
@@ -108,7 +108,7 @@ export default {
     padding: 0 20px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #6a6a6a;
+    color: #050505c1;
     transition: all 0.3s ease;
     > div {
       display: flex;
@@ -117,9 +117,9 @@ export default {
     }
     i {
       font-size: 20px;
-      color: #6e6e6e;
+      color: #050505c1;
       transition: all 0.3s ease;
-      &.expand {
+      &.pi {
         font-size: 16px;
         color: #cacaca;
         &.opened {
