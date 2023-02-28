@@ -7,12 +7,12 @@
       <h3>{{ post.title }}</h3>
       <div class="">{{ post.description }}</div>
       <div class="flex justify-content-between">
-        <div class="">
-          <i class="pi pi-calendar mr-2"></i>{{ post.created_at }}
-        </div>
+        <div class=""><i class="pi pi-calendar mr-2"></i>{{ post.create }}</div>
         <div class="">
           <i class="pi pi-thumbs-up-fill mr-2 text-blue-700"></i
           >{{ post.likes }}
+          <i class="pi pi-thumbs-down-fill mr-2 text-red-700"></i
+          >{{ post.dislikes }}
         </div>
       </div>
     </div>
@@ -22,14 +22,7 @@
 <script>
 export default {
   name: "BPostItem",
-  props: {
-    post: {
-      title: String,
-      description: String,
-      likes: String,
-      created_at: String,
-    },
-  },
+  props: ["post"],
 };
 </script>
 
