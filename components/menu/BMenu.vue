@@ -9,7 +9,7 @@
       :depth="0"
       :smallMenu="smallMenu"
     />
-    <i @click="smallMenu = !smallMenu" class="pi pi-bars"></i>
+    <i @click="smallMenu = !smallMenu" class=""></i>
   </div>
 </template>
 

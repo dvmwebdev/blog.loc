@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full"><BPost /></div>
+  <div class=""><BPost /></div>
 </template>
 
 <script>

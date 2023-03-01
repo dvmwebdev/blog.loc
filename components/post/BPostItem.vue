@@ -1,18 +1,15 @@
 <template>
-  <div class="post__item m-2 p-2 flex">
+  <div class="post__item">
     <div class="">
       <img style="width: 150px" :src="post.url" alt="" />
     </div>
-    <div class="flex flex-column justify-content-between p-2">
+    <div class="">
       <h3>{{ post.title }}</h3>
       <div class="">{{ post.description }}</div>
-      <div class="flex justify-content-between">
-        <div class=""><i class="pi pi-calendar mr-2"></i>{{ post.create }}</div>
+      <div class="f">
+        <div class=""><i class=""></i>{{ post.create }}</div>
         <div class="">
-          <i class="pi pi-thumbs-up-fill mr-2 text-blue-700"></i
-          >{{ post.likes }}
-          <i class="pi pi-thumbs-down-fill mr-2 text-red-700"></i
-          >{{ post.dislikes }}
+          <i class=""></i>{{ post.likes }} <i class=""></i>{{ post.dislikes }}
         </div>
       </div>
     </div>

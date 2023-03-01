@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-column min-h-screen">
+  <div class="">
     <BHeader />
-    <main class="flex-grow-1 h-full"><BMain /></main>
+    <main class=""><BMain /></main>
     <footer>f</footer>
   </div>
 </template>

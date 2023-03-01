@@ -10,7 +10,7 @@
         <span v-if="showLabel">{{ label }}</span>
       </div>
       <div v-if="data.length" class="right">
-        <i class="pi pi-angle-down" :class="{ opened: expanded }"></i>
+        <i class="" :class="{ opened: expanded }"></i>
       </div>
     </div>
     <div

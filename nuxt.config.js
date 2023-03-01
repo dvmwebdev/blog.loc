@@ -16,7 +16,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/css/main.scss", "primeflex/primeflex.css"],
+  css: ["~/assets/css/main.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -29,19 +29,15 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // Doc: https://www.primefaces.org/primevue/showcase-v2/#/setup
-    [
-      "primevue/nuxt",
-      {
-        theme: "bootstrap4-light-blue",
-        ripple: true,
-        components: ["Button", "MegaMenu"],
-        directives: [],
-      },
-    ],
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "bootstrap-vue/nuxt",
   ],
+
+  bootstrapVue: {
+    // Install the `IconsPlugin` plugin (in addition to `BootstrapVue` plugin)
+    icons: true,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -50,8 +46,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    // https://github.com/primefaces/primevue/issues/844
-    transpile: ["primevue"],
-  },
+  build: {},
 };
