@@ -1,13 +1,13 @@
 <template>
-  <div class=""><BPost /></div>
+  <div class=""><BPostLatest /></div>
 </template>
 
 <script>
-import BPost from "@/components/post/BPost.vue";
+import BPostLatest from "@/components/post/BPostLatest.vue";
 
 export default {
   name: "IndexPage",
-  components: { BPost },
+  components: { BPostLatest },
   layout: "site",
 };
 </script>

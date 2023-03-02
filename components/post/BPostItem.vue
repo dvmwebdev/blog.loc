@@ -7,7 +7,9 @@
       <h3>{{ post.title }}</h3>
       <div class="">{{ post.description }}</div>
       <div class="d-flex justify-content-between">
-        <div class=""><i class=""></i>{{ post.create }}</div>
+        <div class="">
+          <b-icon icon="calendar-date" class=""></b-icon>{{ post.create }}
+        </div>
         <div class="">
           <b-icon icon="hand-thumbs-up-fill" style="color: green"></b-icon
           >{{ post.likes }}
