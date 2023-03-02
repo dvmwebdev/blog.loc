@@ -1,9 +1,7 @@
 <template>
-  <div class="">
-    <header class="text-0">
-      <div
-        class="info flex justify-content-around align-items-baseline bg-blue-500 shadow-4"
-      >
+  <div class="info mb-3">
+    <header class="container p-1">
+      <div class="d-flex justify-content-around align-items-baseline">
         <div class="email">admin@dvm.com</div>
         <div class="phone font-bold">
           <i class="pi pi-phone text-xl"></i> +380(67) 959-57-85
@@ -14,7 +12,7 @@
           ><i class="pi pi-facebook text-blue-800 bg-white mr-1"></i>
         </div>
       </div>
-      <div class="flex flex-column text-gray-600 text-center">
+      <div class="d-flex flex-column text-center">
         <h1>БЛОГ</h1>
         <h3 class="">dvmwebdev</h3>
         <h4 class="">про все по чуть-чуть</h4>
@@ -29,4 +27,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.info {
+  background: #74ebd5;
+  box-shadow: 0 13px 10px -4px rgba(0, 0, 0, 0.75);
+}
+</style>

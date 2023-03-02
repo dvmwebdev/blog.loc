@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div class="d-flex flex-column">
     <BHeader />
-    <main class=""><BMain /></main>
+    <main class="main"><BMain /></main>
     <footer>f</footer>
   </div>
 </template>
@@ -16,4 +16,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.main {
+  flex-grow: 1;
+}
+</style>

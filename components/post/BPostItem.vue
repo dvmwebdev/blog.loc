@@ -1,15 +1,18 @@
 <template>
-  <div class="post__item">
+  <div class="post__item d-flex">
     <div class="">
-      <img style="width: 150px" :src="post.url" alt="" />
+      <img :src="post.image" alt="" />
     </div>
-    <div class="">
+    <div class="p-4">
       <h3>{{ post.title }}</h3>
       <div class="">{{ post.description }}</div>
-      <div class="f">
+      <div class="d-flex justify-content-between">
         <div class=""><i class=""></i>{{ post.create }}</div>
         <div class="">
-          <i class=""></i>{{ post.likes }} <i class=""></i>{{ post.dislikes }}
+          <b-icon icon="hand-thumbs-up-fill" style="color: green"></b-icon
+          >{{ post.likes }}
+          <b-icon icon="hand-thumbs-down-fill" style="color: red"></b-icon
+          >{{ post.dislikes }}
         </div>
       </div>
     </div>
@@ -25,6 +28,7 @@ export default {
 
 <style scoped>
 .post__item {
+  margin-bottom: 15px;
   background-color: #fff;
   border: 1px solid cadetblue;
   border-radius: 15px;

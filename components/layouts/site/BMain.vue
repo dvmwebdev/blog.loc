@@ -7,17 +7,21 @@
         </div>
       </div>
       <div class="col-7"><Nuxt /></div>
-      <div class="col-3"><div class="sidebar__right">sr</div></div>
+      <div class="col-3">
+        <div class="sidebar__right"><BSubscriber /></div>
+      </div>
     </b-row>
   </b-container>
 </template>
 
 <script>
 import BMenu from "@/components/menu/BMenu.vue";
+import BSubscriber from "@/components/layouts/site/BSubscriber.vue";
 
 export default {
   name: "BMain",
   components: {
+    BSubscriber,
     BMenu,
   },
   data() {

@@ -10,7 +10,11 @@
         <span v-if="showLabel">{{ label }}</span>
       </div>
       <div v-if="data.length" class="right">
-        <i class="" :class="{ opened: expanded }"></i>
+        <b-icon
+          icon="chevron-down"
+          style="color: black"
+          :class="{ opened: expanded }"
+        ></b-icon>
       </div>
     </div>
     <div
@@ -115,11 +119,11 @@ export default {
       align-items: center;
       gap: 10px;
     }
-    i {
+    svg {
       font-size: 20px;
       color: #050505c1;
       transition: all 0.3s ease;
-      &.pi {
+      &.bi-chevron-down {
         font-size: 16px;
         color: #cacaca;
         &.opened {
