@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column vh-100">
     <BHeader />
     <main class="main"><BMain /></main>
     <footer>f</footer>

@@ -8,7 +8,9 @@
       </div>
       <div class="col-7"><Nuxt /></div>
       <div class="col-3">
-        <div class="sidebar__right"><BSubscriber /></div>
+        <div class="sidebar__right">        <div class="auth">
+          <BLogin />
+        </div><BSubscriber /></div>
       </div>
     </b-row>
   </b-container>
@@ -17,10 +19,12 @@
 <script>
 import BMenu from "@/components/menu/BMenu.vue";
 import BSubscriber from "@/components/layouts/site/BSubscriber.vue";
+import BLogin from "@/components/auth/BLogin.vue";
 
 export default {
   name: "BMain",
   components: {
+    BLogin,
     BSubscriber,
     BMenu,
   },

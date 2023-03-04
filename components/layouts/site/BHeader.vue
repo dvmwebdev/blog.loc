@@ -7,9 +7,9 @@
           <i class="pi pi-phone text-xl"></i> +380(67) 959-57-85
         </div>
         <div class="social">
-          <i class="pi pi-youtube text-red-500 bg-white mr-1"></i
-          ><i class="pi pi-telegram text-blue-500 bg-white mr-1"></i
-          ><i class="pi pi-facebook text-blue-800 bg-white mr-1"></i>
+          <b-icon icon="youtube" scale="2" class="rounded bg-white p-1" variant="danger"></b-icon>
+          <b-icon icon="telegram"></b-icon>
+          <b-icon icon="facebook"></b-icon>
         </div>
       </div>
       <div class="d-flex flex-column text-center">
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+
 export default {
   name: "BHeader",
 };
