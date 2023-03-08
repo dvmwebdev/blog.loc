@@ -1,6 +1,8 @@
 <template>
   <div class="admin__layout">
-    <div class="admin-layout__sidebar">s</div>
+    <div class="admin-layout__sidebar">
+      <BAMenu />
+    </div>
     <div class="admin-layout__main">
       <div class="admin-layout__topbar border">admin-layout__topbar</div>
       <div class="admin-layout__content border">admin-layout__content</div>
@@ -10,8 +12,11 @@
 </template>
 
 <script>
+import BAMenu from "@/components/layouts/admin/BAMenu.vue";
+
 export default {
   name: "admin",
+  components: { BAMenu },
 };
 </script>
 
