@@ -1,10 +1,10 @@
 <template>
-  <div class="">dashboard</div>
+  <div class="">create</div>
 </template>
 
 <script>
 export default {
-  name: "index",
+  name: "create",
   layout: "admin",
 };
 </script>

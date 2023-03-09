@@ -4,9 +4,9 @@
       <BAMenu />
     </div>
     <div class="admin-layout__main">
-      <div class="admin-layout__topbar border">admin-layout__topbar</div>
-      <div class="admin-layout__content border">admin-layout__content</div>
-      <div class="admin-layout__footer border">admin-layout__footer</div>
+      <div class="admin-layout__topbar">admin-layout__topbar</div>
+      <div class="admin-layout__content"><Nuxt /></div>
+      <div class="admin-layout__footer">admin-layout__footer</div>
     </div>
   </div>
 </template>
@@ -69,7 +69,7 @@ $layout-sidebar-width: 260px;
     flex-shrink: 0;
     padding: 30px;
     margin-top: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
     text-align: right;
   }
 }
