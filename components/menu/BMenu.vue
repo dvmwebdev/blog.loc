@@ -23,143 +23,40 @@ export default {
     items: [
       {
         id: 1,
-        name: "voluptas",
-        children: [],
-      },
-      {
-        id: 2,
-        name: "beatae",
+        name: "Програмування",
         children: [
           {
             id: 11,
-            name: "repudiandae",
+            name: "JavaScript",
             children: [],
           },
           {
             id: 12,
-            name: "velit",
+            name: "PHP",
             children: [],
-          },
-          {
-            id: 13,
-            name: "adipisci",
-            children: [],
-          },
-          {
-            id: 14,
-            name: "facilis",
-            children: [
-              {
-                id: 14,
-                name: "facilis",
-                children: [],
-              },
-            ],
           },
         ],
       },
       {
-        id: 3,
-        name: "laudantium",
-        children: [],
-      },
-      {
-        id: 4,
-        name: "adipisci",
+        id: 2,
+        name: "ПК",
         children: [
           {
             id: 15,
-            name: "nihil",
+            name: "Підбір конфігурації",
             children: [],
           },
           {
             id: 16,
-            name: "ipsa",
+            name: "Ремонт",
             children: [],
           },
           {
             id: 17,
-            name: "veritatis",
-            children: [],
-          },
-          {
-            id: 18,
-            name: "et",
+            name: "Проблеми і їх вирішення",
             children: [],
           },
         ],
-      },
-      {
-        id: 5,
-        name: "possimus",
-        children: [],
-      },
-      {
-        id: 6,
-        name: "perferendis",
-        children: [],
-      },
-      {
-        id: 7,
-        name: "dignissimos",
-        children: [
-          {
-            id: 19,
-            name: "aut",
-            children: [],
-          },
-          {
-            id: 20,
-            name: "cupiditate",
-            children: [],
-          },
-          {
-            id: 21,
-            name: "quia",
-            children: [],
-          },
-        ],
-      },
-      {
-        id: 8,
-        name: "fuga",
-        children: [
-          {
-            id: 22,
-            name: "consequatur",
-            children: [],
-          },
-          {
-            id: 23,
-            name: "et",
-            children: [],
-          },
-          {
-            id: 24,
-            name: "ullam",
-            children: [],
-          },
-          {
-            id: 25,
-            name: "hic",
-            children: [],
-          },
-          {
-            id: 26,
-            name: "illo",
-            children: [],
-          },
-        ],
-      },
-      {
-        id: 9,
-        name: "ut",
-        children: [],
-      },
-      {
-        id: 10,
-        name: "nisi",
-        children: [],
       },
     ],
   }),
@@ -173,9 +70,10 @@ export default {
 .menu {
   left: 0;
   top: 0;
-  border-right: 1px solid #ececec;
   transition: all 0.3s ease;
   overflow: auto;
+  background-color: #fff;
+  border-radius: 5px;
   i {
     position: fixed;
     left: 250px;

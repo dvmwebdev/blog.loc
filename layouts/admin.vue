@@ -1,10 +1,10 @@
 <template>
-  <div class="admin__layout">
+  <div class="admin__layout admin-layout--open">
     <div class="admin-layout__sidebar">
       <BAMenu />
     </div>
     <div class="admin-layout__main">
-      <div class="admin-layout__topbar">admin-layout__topbar</div>
+      <div class="admin-layout__topbar"><BATopBar></BATopBar></div>
       <div class="admin-layout__content"><Nuxt /></div>
       <div class="admin-layout__footer">admin-layout__footer</div>
     </div>
@@ -13,10 +13,11 @@
 
 <script>
 import BAMenu from "@/components/layouts/admin/BAMenu.vue";
+import BATopBar from "@/components/layouts/admin/BATopBar.vue";
 
 export default {
   name: "admin",
-  components: { BAMenu },
+  components: { BATopBar, BAMenu },
 };
 </script>
 
@@ -51,12 +52,18 @@ $layout-sidebar-width: 260px;
   }
 
   .admin-layout__topbar {
-    width: 100%;
-    position: fixed;
     flex-shrink: 0;
-    height: 80px;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 998;
+    width: 100%;
+    height: 80px;
+  }
+
+  &.admin-layout--open .admin-layout__topbar {
+    left: 260px;
+    width: calc(100% - 260px);
   }
 
   .admin-layout__content {

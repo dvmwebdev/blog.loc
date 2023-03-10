@@ -43,3 +43,12 @@ a {
     text-decoration: none;
   }
 }
+
+.ui.header .circular.icon {
+  width: 2.5em !important;
+  height: 2.5em !important;
+  font-size: 1em;
+  color: #1a70bb;
+  background: rgba(26, 187, 156, 0.1);
+  box-shadow: none;
+}
