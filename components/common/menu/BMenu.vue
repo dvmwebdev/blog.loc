@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import BMenuItem from "@/components/menu/BMenuItem.vue";
+import BMenuItem from "@/components/common/menu/BMenuItem.vue";
 
 export default {
   name: "recursive-menu",

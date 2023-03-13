@@ -99,7 +99,7 @@
 </template>
 
 <script>
-import BMenu from "@/components/menu/BMenu.vue";
+import BMenu from "@/components/common/menu/BMenu.vue";
 
 export default {
   name: "index",

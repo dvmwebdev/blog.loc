@@ -8,18 +8,21 @@
       </div>
       <div class="col-7"><Nuxt /></div>
       <div class="col-3">
-        <div class="sidebar__right">        <div class="auth">
-          <BLogin />
-        </div><BSubscriber /></div>
+        <div class="sidebar__right">
+          <div class="auth">
+            <BLogin />
+          </div>
+          <BSubscriber />
+        </div>
       </div>
     </b-row>
   </b-container>
 </template>
 
 <script>
-import BMenu from "@/components/menu/BMenu.vue";
-import BSubscriber from "@/components/layouts/site/BSubscriber.vue";
-import BLogin from "@/components/auth/BLogin.vue";
+import BMenu from "@/components/common/menu/BMenu.vue";
+import BSubscriber from "@/components/site/layout/BSubscriber.vue";
+import BLogin from "@/components/site/auth/BLogin.vue";
 
 export default {
   name: "BMain",

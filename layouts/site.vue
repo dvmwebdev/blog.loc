@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import BHeader from "@/components/layouts/site/BHeader.vue";
-import BMain from "@/components/layouts/site/BMain.vue";
+import BHeader from "@/components/site/layout/BHeader.vue";
+import BMain from "@/components/site/layout/BMain.vue";
 
 export default {
   name: "site",

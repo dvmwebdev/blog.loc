@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import BPostItem from "@/components/post/BPostItem.vue";
+import BPostItem from "@/components/site/post/BPostItem.vue";
 
 export default {
   name: "BPost",
