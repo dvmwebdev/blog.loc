@@ -15,7 +15,7 @@ export default {
 <style scoped lang="scss">
 .admin__layout {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }

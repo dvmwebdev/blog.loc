@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <div class="row">
-      <div class="col-md-2"><div class="main__sidebar">s</div></div>
-      <div class="col-md-10"><div class="main__content">c</div></div>
+    <div class="d-flex h-100">
+      <div class="main__sidebar">s</div>
+      <div class="main__content">c</div>
     </div>
   </div>
 </template>
@@ -16,14 +16,17 @@ export default {
 <style scoped>
 .main {
   width: 100%;
-  display: flex;
   height: 100%;
 }
 .main__sidebar {
+  width: 300px;
   height: 100%;
+  background-color: #05154f;
+  color: #deedff;
   border: 1px solid red;
 }
 .main__content {
+  width: 100%;
   height: 100%;
   border: 1px solid red;
 }
